@@ -98,43 +98,27 @@ POST http://127.0.0.1:8000/api/model
 
 ### Parameters
 
-| Parameters | | Deskripsi |
-
-| ------ | ------ | ------ |
-
-| dataset | required | **dataset** adalah data yang akan dibuat modelnya (dataset dikirm dalam bentuk JSON, banyak tools online untuk covert xls to JSON) |
-
-| access_token | required | **access_token** adalah token yang digunakan agar dapat mengakses service |
-
-| access_token_secret | required | **access_token_secret** adalah token yang digunakan agar dapat mengakses service |
+| Parameters          |          | Deskripsi                                                                                                                          |
+| ------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| dataset             | required | **dataset** adalah data yang akan dibuat modelnya (dataset dikirm dalam bentuk JSON, banyak tools online untuk covert xls to JSON) |
+| access_token        | required | **access_token** adalah token yang digunakan agar dapat mengakses service                                                          |
+| access_token_secret | required | **access_token_secret** adalah token yang digunakan agar dapat mengakses service                                                   |
 
 ### Result
 
-| Parameters | Deskripsi |
-
-| ------ | ------ |
-
-| code | **200** jika token valid **401** jika token tidak valid|
-
-| title | LSTM API|
-
-| status | **success** jika text berhasil dipreprocessing **warning** jika token tidak valid|
-
-| category | label dari dataset|
-
-| history | nilai epoch |
-
-| y_act | label_test |
-
-| y_pred | niali prediksi dari model.predict() |
-
-| accuracy | nilai accuracy berdasarkan train model (model.fit())|
-
-| precision | nilai precision berdasarkan train model (model.fit()) |
-
-| recall | nilai recall berdasarkan train model (model.fit()) |
-
-| model | data model |
+| Parameters | Deskripsi                                                                         |
+| ---------- | --------------------------------------------------------------------------------- |
+| code       | **200** jika token valid **401** jika token tidak valid                           |
+| title      | LSTM API                                                                          |
+| status     | **success** jika text berhasil dipreprocessing **warning** jika token tidak valid |
+| category   | label dari dataset                                                                |
+| history    | nilai epoch                                                                       |
+| y_act      | label_test                                                                        |
+| y_pred     | niali prediksi dari model.predict()                                               |
+| accuracy   | nilai accuracy berdasarkan train model (model.fit())                              |
+| precision  | nilai precision berdasarkan train model (model.fit())                             |
+| recall     | nilai recall berdasarkan train model (model.fit())                                |
+| model      | data model                                                                        |
 
 ### Example JSON data
 
@@ -165,35 +149,23 @@ POST http://127.0.0.1:8000/api/
 
 ### Parameters
 
-| Parameters | | Deskripsi |
-
-| ------ | ------ | ------ |
-
-| dataset | required | **dataset** adalah data yang akan dibuat modelnya (dataset dikirm dalam bentuk JSON, banyak tools online untuk covert xls to JSON) |
-
-| model | required | **model** adalah data JSON yang didapat dari respon endpoint model |
-
-| content | required | **content** adalah data yang akan di test |
-
-| access_token | required | **access_token** adalah token yang digunakan agar dapat mengakses service |
-
-| access_token_secret | required | **access_token_secret** adalah token yang digunakan agar dapat mengakses service |
+| Parameters          |          | Deskripsi                                                                                                                          |
+| ------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| dataset             | required | **dataset** adalah data yang akan dibuat modelnya (dataset dikirm dalam bentuk JSON, banyak tools online untuk covert xls to JSON) |
+| model               | required | **model** adalah data JSON yang didapat dari respon endpoint model                                                                 |
+| content             | required | **content** adalah data yang akan di test                                                                                          |
+| access_token        | required | **access_token** adalah token yang digunakan agar dapat mengakses service                                                          |
+| access_token_secret | required | **access_token_secret** adalah token yang digunakan agar dapat mengakses service                                                   |
 
 ### Result
 
-| Parameters | Deskripsi |
-
-| ------ | ------ |
-
-| code | **200** jika token valid **401** jika token tidak valid|
-
-| title | LSTM API|
-
-| status | **success** jika text berhasil dipreprocessing **warning** jika token tidak valid|
-
-| status | successt|
-
-| predict | nilai prediksi |
+| Parameters | Deskripsi                                                                         |
+| ---------- | --------------------------------------------------------------------------------- |
+| code       | **200** jika token valid **401** jika token tidak valid                           |
+| title      | LSTM API                                                                          |
+| status     | **success** jika text berhasil dipreprocessing **warning** jika token tidak valid |
+| status     | successt                                                                          |
+| predict    | nilai prediksi                                                                    |
 
 ### Example JSON data
 
